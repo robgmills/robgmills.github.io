@@ -1,0 +1,41 @@
+//// Functions
+@function get-map-value($map, $key){
+	@each $pair in $map {
+		@if $key == nth($pair, 1) {
+			@return nth($pair, 2);
+		}
+	}
+}
+
+@function corbusier-font($index) {
+	@return corbusier($base-font-size, $index);
+}
+
+// Applies the Le Corbusier sequence multiplier for the given index
+// to the provided variable
+@function corbusier($var, $index){
+	/* Le Corbusier sequence */
+	$corbusier-sequence:(
+		-5 .3077,
+		-4 .3846,
+		-3 .5000,
+		-2 .6154,
+		-1 .8077,
+		0 1.0000,
+		1 1.3077,
+		2 1.6154,
+		3 2.1154,
+		4 3.4231,
+		5 4.2308,
+		6 5.5385,
+		7 6.8462
+	);
+
+	$multiplier: get-map-value($corbusier-sequence, $index);
+	@return $var * $multiplier;
+}
+
+@function get-font-weight($step){
+	$weights:( 300, 400, 600, 800 );
+	@return #{nth($weights, $step)};
+}

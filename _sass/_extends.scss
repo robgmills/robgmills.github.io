@@ -1,0 +1,21 @@
+//// Extends
+%permalink {
+	@extend %hide-text;
+	// TODO: replace with encoded image
+	background-image: inline-image("link.svg");
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin: 0 0 0 5px;
+	padding: 0;
+	border: 0;
+	opacity: .2;
+}
+
+%hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}

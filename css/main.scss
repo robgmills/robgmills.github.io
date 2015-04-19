@@ -3,49 +3,42 @@
 ---
 @charset "utf-8";
 
+$max-width: 700px;
+$background-color: #fff;
 
+//$base-font-family: "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+$font-family: "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+$base-font-size: 1em;
+$base-line-height: 1.4;
+$font-color: #000;
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
+// Device breakpoints
 $on-palm:          600px;
 $on-laptop:        800px;
 
+// TODO: replace with media mixin
+@media (max-width: 700px) {
+	section#timeline {
+		article {
+			margin-left: 1em;
+			margin-right: 1em;
+			padding: 1.5em 0;
 
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+			blockquote {
+				border-left: .5em solid adjust-color($font-color, $lightness: 0%);
+			}
+		}
+	}
 }
-
-
+// :ODOT
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "animations",
+        "extends",
+        "fonts",
+        "functions",
+        "mixins",
         "base",
         "layout",
         "syntax-highlighting"

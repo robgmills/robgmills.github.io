@@ -1,0 +1,55 @@
+//// Mixins
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin circlelogo($size: 100px, $bordersize: 4px, $bgcolor: #fff, $bordercolor: #000) {
+	aside {
+		@include border-radius(50%);
+		margin: 0px auto;
+		background-color: $bordercolor;
+
+		width: $size; // 124px
+		height: $size; // 124px
+
+		 div {
+		 	@extend %hide-text;
+		 	@include border-radius(50%);
+
+			background-color: $bgcolor;
+			display: inline-block;
+
+			width: $size - ($bordersize * 2); // 116px
+			height: $size - ($bordersize * 2); // 116px
+			margin: $bordersize; // 4px
+
+			a {
+				@include border-radius(50%);
+				// TODO: replace with encoded image
+				background: #fff url("/images/logo.svg") center center no-repeat;
+				background-size: 100% 100%;
+				display: block;
+
+				width: $size - ($bordersize * 6); // 108px
+				height: $size - ($bordersize * 6); // 108px
+				margin: ($bordersize * 2) auto 0; // 4px
+			}
+		}
+	}
+}

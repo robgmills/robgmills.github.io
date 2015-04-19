@@ -1,204 +1,263 @@
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
+/* TODO: Not sure how this is generated */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section { display: block }
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
 }
-
-
-
-/**
- * Basic styling
- */
-body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
-}
-
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-}
-
-
-
-/**
- * Images
- */
-img {
-    max-width: 100%;
+audio:not([controls]) { display: none }
+[hidden] { display: none }
+img,
+object,
+video,
+embed {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
     vertical-align: middle;
+    max-width: 100%;
+}
+svg:not(:root) { overflow: hidden }
+/* :ODOT */
+
+::selection {
+	background: adjust-color($font-color, $lightness: 0%);
+	color: adjust-color($font-color, $lightness: 100%);
+}
+::-moz-selection {
+	background: adjust-color($font-color, $lightness: 0%);
+	color: adjust-color($font-color, $lightness: 100%);
+}
+* {
+	color: adjust-color($font-color, $lightness: 30%);
+}
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	font-family: sans-serif;
+}
+body {
+	margin: 0;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	font-family: $font-family;
 }
 
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
+h1 {
+	font-size: corbusier-font(3);
+	font-weight: get-font-weight(4);
+	color: adjust-color($font-color, $lightness: 0%);
 }
-
-figcaption {
-    font-size: $small-font-size;
+h2 {
+	font-size: corbusier-font(2);
+	font-weight: get-font-weight(4);
+	color: adjust-color($font-color, $lightness: 0%);
 }
-
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
+h3 {
+	font-size: corbusier-font(1);
+	font-weight: get-font-weight(4);
+	color: adjust-color($font-color, $lightness: 0%);
 }
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
+h4 {
+	font-size: corbusier-font(1);
+	font-weight: get-font-weight(3);
+	color: adjust-color($font-color, $lightness: 10%);
 }
-
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+h5 {
+	font-size: corbusier-font(1);
+	font-weight: get-font-weight(2);
+	color: adjust-color($font-color, $lightness: 20%);
 }
-
-
-
-/**
- * Links
- */
+h6 {
+	font-size: corbusier-font(1);
+	font-weight: get-font-weight(1);
+	color: adjust-color($font-color, $lightness: 20%);
+}
+p {
+	font-size: corbusier-font(1);
+	font-weight: get-font-weight(1);
+	color: adjust-color($font-color, $lightness: 30%);
+}
+em { font-style: italic }
+strong {
+	font-weight: bold;
+	color: adjust-color($font-color, $lightness: 20%);
+}
+small { font-size: corbusier-font(-1); }
+sub,
+sup {
+	font-size: corbusier-font(-2);
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup { top: -0.5em }
+sub { bottom: -0.25em }
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	list-style-type: none;
+}
 a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
+	color: inherit;
+	text-decoration: none;
+}
+hr {
+	display: block;
+	border: solid adjust-color($font-color, $lightness: 95%);
+	border-width: 5px 0 0;
+	height: 0;
+	border-radius: 5px;
+	color: adjust-color($font-color, $lightness: 95%);
+	width: 75%;
+	margin: 40px auto 0;
 }
 
+section#timeline {
+	width: auto;
+	max-width: $max-width;
+	margin: 0 auto;
+	display: block;
+	padding: 20px 0;
 
+	header {
+		@include circlelogo( 124px, 4px, #fff, #000 );
 
-/**
- * Blockquotes
- */
-blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
+		time {
+			display: block;
+			margin: 20px auto 0;
+			text-align: center;
+			font-weight: 800;
+			font-size: 100%;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+		}
+	}
 
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
+	article {
+		padding-top: 60px;
 
+		&:nth-last-child(2) {
+			margin-bottom: 40px;
+		}
 
+		&:hover {
+			h1 a:nth-child(2),
+			h2:nth-child(1) a:nth-child(2) {
+				visibility: visible;
+			}
+		}
 
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-}
+		h1 {
+			a:nth-child(2) {
+				@extend %permalink;
+				visibility: hidden;
+			}
 
-code {
-    padding: 1px 5px;
-}
+			&:hover {
+				a:nth-child(2) {
+					opacity: 1;
+				}
+			}
+		}
 
-pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
+		h2:nth-child(1) {
+			a:nth-child(2) {
+				@extend %permalink;
+				visibility: hidden;
+			}
 
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
+			&:hover {
+				a:nth-child(2) {
+					opacity: 1;
+				}
+			}
+		}
 
+		ul {
+			display: block;
+			list-style-type: disc;
+			margin: 0 5%;
 
+			&:nth-child(2) {
+				display: none;
+			}
 
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
+			li {
+				margin: 10px 0;
+			}
+		}
 
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
+		blockquote {
+			border-left: .5em solid adjust-color($font-color, $lightness: 0%);
+			padding-left: 1em;
+			font-style: italic;
+			margin-left: -1.5em;
+		}
 
+		p {
+			// TODO: First p larger by referencing parent
+			// - ul:nth-child(2) + p
+			// - blockquote:nth-child(2) + p
+			margin: 20px 0;
 
+			a {
+				border-bottom: 1px solid #ccc;
+				color: adjust-color($font-color, $lightness: 0%);
+			}
 
-/**
- * Clearfix
- */
-%clearfix {
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+		}
 
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
+		div.video-container {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 30px;
+			height: 0;
+		}
 
+		.video-container iframe,
+		.video-container object,
+		.video-container embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
 
+		& > hr {
+			margin-top: 60px;
+		}
 
-/**
- * Icons
- */
-.icon {
+		&:last-of-type > hr {
+			display: none;
+		}
+	}
 
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
+	footer {
+		@include circlelogo( 62px, 2px, #fff, #000 );
 
-        path {
-            fill: $grey-color;
-        }
-    }
+		&.loading aside div a {
+			-webkit-animation:spin 4s linear infinite;
+			-moz-animation:spin 4s linear infinite;
+			animation:spin 4s linear infinite;
+		}
+	}
 }
