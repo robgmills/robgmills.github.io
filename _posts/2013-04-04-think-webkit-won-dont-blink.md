@@ -3,9 +3,8 @@ layout: post
 title:  "Think WebKit won? Don't Blink."
 date:   2013-04-04
 categories: tech business
+link: http://thenextweb.com/insider/2013/04/04/opera-confirms-it-will-follow-google-and-ditch-webkit-for-blink-as-part-of-its-commitment-to-chromium/
 ---
-
-[Think WebKit won? Don't Blink.](http://thenextweb.com/insider/2013/04/04/opera-confirms-it-will-follow-google-and-ditch-webkit-for-blink-as-part-of-its-commitment-to-chromium/)
 
 ![XKCD - Standards](http://imgs.xkcd.com/comics/standards.png)
 
