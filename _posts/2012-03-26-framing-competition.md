@@ -3,9 +3,8 @@ layout: post
 title:  "Framing competition"
 date:   2012-03-26
 categories: life
+link: http://moto-racing.speedtv.com/article/motogp-noyes-notebook-big-changes-beyond-2012/P2
 ---
-
-[Framing competition](http://moto-racing.speedtv.com/article/motogp-noyes-notebook-big-changes-beyond-2012/P2)
 
 > An interesting exchange took place on Thursday, March 22, at the Yamaha press conference in Jerez after the presentation of the freshly painted, new Yamaha M1s. Lorenzo was asked if he still believed, as he had said several times earlier, that the 1000cc bikes were too fast.
 

@@ -3,9 +3,8 @@ layout: post
 title:  "Facebook charging for ad clicks from bots"
 date:   2012-07-30
 categories: tech business
+link: http://blog.limitedrun.com/post/28341629174/why-were-deleting-our-facebook-page
 ---
-
-[Facebook charging for ad clicks from bots](http://blog.limitedrun.com/post/28341629174/why-were-deleting-our-facebook-page)
 
 This news isn't going to help their [currently-nose-diving-faster-than-amelia-earhart stock price](https://www.google.com/finance?client=ob&amp;q=NASDAQ:FB) any.  Ignoring the fact that Limited Run hasn't provided any evidence of what's going on yet, it sucks that Facebook is leaving it up to their customers to figure this out, then dispute after they get hit with a bill.  In their updated IPO filing, they guesstimated that 5-6% - or approximately 40-50MM - of their Monthly Active Users (MAUs) at the time were fake accounts.  But I wonder how much of Facebook's overall traffic is a direct result of bots and click fraud?
 

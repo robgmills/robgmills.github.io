@@ -3,9 +3,8 @@ layout: post
 title:  "Lawsuits filed over Zynga exec stock selloff - price will bounce back"
 date:   2012-07-31
 categories: tech business
+link: http://www.theverge.com/2012/7/31/3201728/zyngas-insider-trading-lawsuits-focuses-on-execs-who-avoided-ban-on
 ---
-
-[Lawsuits filed over Zynga exec stock selloff - price will bounce back](http://www.theverge.com/2012/7/31/3201728/zyngas-insider-trading-lawsuits-focuses-on-execs-who-avoided-ban-on)
 
 When I put the Zynga and Facebook stock scandals side-by-side and compared them, I realized they couldn't be more different.  Zynga is accused of manipulating its underwriters to allow top-level executives, who supposedly saw a potentially poor earnings statement in the works, to SELL off large amounts of stock while all other employees had their shares frozen.  Facebook on the other hand, manipulated their underwriters into BUYING more stock in an effort to keep the price above the initial offering price and attempt to create an artificial "pop" for their early investors.
 
