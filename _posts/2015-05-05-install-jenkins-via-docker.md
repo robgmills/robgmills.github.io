@@ -3,6 +3,7 @@ layout: post
 title:  "Install Jenkins via Docker"
 date:   2015-05-05
 categories: tech development howto
+link: https://registry.hub.docker.com/_/jenkins/
 ---
 
 You should have Docker properly installed on your machine. Check ﻿Docker installation guide for details.
