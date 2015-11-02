@@ -1,0 +1,16 @@
+---
+layout: default
+title: Archive
+permalink: /archive/
+---
+
+<article>
+  <h1><a href="{{ page.permalink | prepend: site.baseurl }}">{{ page.title }}</a></h1>
+  {% for post in site.posts %}
+    <p>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </p>
+  {% endfor %}
+</article>
+
+{% include footer.html %}
