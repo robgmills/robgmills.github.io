@@ -16,21 +16,23 @@ $font-color: #000;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-// TODO: replace with media mixin
 @media (max-width: 700px) {
-	section#timeline {
-		article {
-			margin-left: 1em;
-			margin-right: 1em;
-			padding: 1.5em 0;
+	.highlight {
+		overflow-wrap: normal;
+		overflow: scroll;
+	}
 
-			blockquote {
-				border-left: .5em solid adjust-color($font-color, $lightness: 0%);
-			}
+	article {
+		margin-left: 1em;
+		margin-right: 1em;
+		padding: 1.5em 0;
+		overflow-wrap: break-word;
+
+		blockquote {
+			border-left: .5em solid adjust-color($font-color, $lightness: 0%);
 		}
 	}
 }
-// :ODOT
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
