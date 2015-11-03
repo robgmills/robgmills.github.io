@@ -1,10 +1,9 @@
 ---
 layout: default
 title: Blog
-permalink: /blog/
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <article>
   <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
   {{ post.content }}
@@ -12,5 +11,6 @@ permalink: /blog/
 </article>
 {% endfor %}
 
+{% include pagination.html %}
 
 {% include footer.html %}
