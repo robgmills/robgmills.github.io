@@ -17,11 +17,6 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 @media (max-width: 700px) {
-	.highlight {
-		overflow-wrap: normal;
-		overflow: scroll;
-	}
-
 	article {
 		margin-left: 1em;
 		margin-right: 1em;
