@@ -2,15 +2,12 @@
 layout: default
 title: Blog
 ---
-
 {% for post in paginator.posts %}
 <article>
   <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
   {{ post.content }}
-  <hr />
 </article>
+<hr />
 {% endfor %}
-
 {% include pagination.html %}
-
 {% include footer.html %}
