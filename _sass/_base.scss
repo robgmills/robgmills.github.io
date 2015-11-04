@@ -115,37 +115,32 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
-hr {
-	display: block;
-	border: 1px solid adjust-color($font-color, $lightness: 95%);
-	height: 0;
-	border-radius: 5px;
-	color: adjust-color($font-color, $lightness: 95%);
+
+header {
+	margin-top: 70px;
+
+	@include circlelogo( 124px, 4px, #fff, #000 );
+
+	time {
+		display: block;
+		margin: 20px auto 0;
+		text-align: center;
+		font-weight: 800;
+		font-size: 100%;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
 }
 
 section#timeline {
 	width: auto;
-	max-width: $max-width;
 	margin: 0 auto;
 	display: block;
 	padding: 20px 0;
 
-	header {
-		@include circlelogo( 124px, 4px, #fff, #000 );
-
-		time {
-			display: block;
-			margin: 20px auto 0;
-			text-align: center;
-			font-weight: 800;
-			font-size: 100%;
-			letter-spacing: 1px;
-			text-transform: uppercase;
-		}
-	}
-
 	article {
-		padding-top: 60px;
+		max-width: $max-width;
+		margin: 0 auto;
 
 		&:nth-last-child(2) {
 			margin-bottom: 40px;
@@ -245,12 +240,17 @@ section#timeline {
 			width: 100%;
 			height: 100%;
 		}
+	}
 
-		& > hr {
-			margin-top: 60px;
-		}
 
-		&:last-of-type > hr {
+	& > hr {
+		display: block;
+		border: 1px solid adjust-color($font-color, $lightness: 95%);
+		height: 0;
+		color: adjust-color($font-color, $lightness: 95%);
+		margin: 70px 0 50px 0;
+
+		&:last-of-type {
 			display: none;
 		}
 	}
@@ -298,14 +298,23 @@ section#timeline {
 			}
 		}
 	}
+}
 
-	footer {
-		@include circlelogo( 62px, 2px, #fff, #000 );
+footer {
+	clear: both;
+	display: block;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	margin-top: 20px;
+	border-top: 1px solid adjust-color($font-color, $lightness: 95%);
+	padding-top: 20px;
 
-		&.loading aside div a {
-			-webkit-animation:spin 4s linear infinite;
-			-moz-animation:spin 4s linear infinite;
-			animation:spin 4s linear infinite;
-		}
+	@include circlelogo( 62px, 2px, #fff, #000 );
+
+	&.loading aside div a {
+		-webkit-animation:spin 4s linear infinite;
+		-moz-animation:spin 4s linear infinite;
+		animation:spin 4s linear infinite;
 	}
 }
