@@ -16,7 +16,7 @@ couldn't find the tool in our instance of BitBucket and had to resort to the bui
     git clone --mirror https://github.com/exampleuser/repository-to-mirror.git
     cd repository-to-mirror.git
     ```
-
+    
 0. [Set the push location on the mirror to your new remote][git-push]
 
     ```sh

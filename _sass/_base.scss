@@ -106,10 +106,14 @@ sup { top: -0.5em }
 sub { bottom: -0.25em }
 ul,
 ol {
+	font-weight: get-font-weight(1);
 	margin: 0;
-	padding: 0;
+	padding: 0 1.5em;
 	list-style: none;
 	list-style-type: none;
+}
+ol {
+	list-style-type: decimal;
 }
 a {
 	color: inherit;
