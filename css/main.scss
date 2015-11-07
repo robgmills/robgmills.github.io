@@ -17,6 +17,10 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 @media (max-width: 700px) {
+	section#timeline {
+		padding: 1.5em 1.5em;
+	}
+
 	article {
 		margin-left: 1em;
 		margin-right: 1em;

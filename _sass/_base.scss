@@ -121,22 +121,13 @@ header {
 
 	@include circlelogo( 124px, 4px, #fff, #000 );
 
-	time {
-		display: block;
-		margin: 20px auto 0;
-		text-align: center;
-		font-weight: 800;
-		font-size: 100%;
-		letter-spacing: 1px;
-		text-transform: uppercase;
-	}
 }
 
 section#timeline {
 	width: auto;
 	margin: 0 auto;
 	display: block;
-	padding: 20px 0;
+	padding: 1em;
 
 	article {
 		max-width: $max-width;
@@ -256,12 +247,9 @@ section#timeline {
 	}
 
 	nav.pagination {
-		padding: 25px;
-		padding-bottom: 50px;
-		margin: 0 auto;
+		padding: 3em 1em;
+		margin-top: 4em;
 		border-top: 1px solid adjust-color($font-color, $lightness: 95%);
-		padding-top: 45px;
-		margin-top: 75px;
 
 		span {
 			display: block;
@@ -276,11 +264,10 @@ section#timeline {
 
 			a {
 				padding: 0px;
-				font-size: 17px;
+				font-size: 1em;
 				line-height: 35px;
 				display: inline-block;
-				padding-left: 25px;
-				padding-right: 25px;
+				padding: 0 25px;
 				border-radius: 30px;
 				-moz-border-radius: 30px;
 				-webkit-border-radius: 30px;
@@ -303,12 +290,10 @@ section#timeline {
 footer {
 	clear: both;
 	display: block;
-	margin: 0;
-	padding: 0;
+	margin: 20px 0;
+	padding: 20px 0;
 	position: relative;
-	margin-top: 20px;
 	border-top: 1px solid adjust-color($font-color, $lightness: 95%);
-	padding-top: 20px;
 
 	@include circlelogo( 62px, 2px, #fff, #000 );
 
@@ -317,4 +302,9 @@ footer {
 		-moz-animation:spin 4s linear infinite;
 		animation:spin 4s linear infinite;
 	}
+}
+
+.copyright {
+	float: right;
+	color: adjust-color($font-color, $lightness: 95%);
 }
