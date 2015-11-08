@@ -26,7 +26,6 @@ embed {
     max-width: 100%;
 }
 svg:not(:root) { overflow: hidden }
-
 ::selection {
 	background: adjust-color($font-color, $lightness: 0%);
 	color: adjust-color($font-color, $lightness: 100%);
@@ -116,19 +115,16 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
-
 header {
 	margin-top: 70px;
 
 	@include circlelogo( 124px, 4px, #fff, #000 );
 
 }
-
 section#timeline {
 	width: auto;
 	margin: 0 auto;
 	display: block;
-	padding: 1em;
 
 	article {
 		max-width: $max-width;
@@ -287,7 +283,6 @@ section#timeline {
 		}
 	}
 }
-
 footer {
 	clear: both;
 	display: block;
@@ -304,8 +299,21 @@ footer {
 		animation:spin 4s linear infinite;
 	}
 }
-
 .copyright {
 	float: right;
 	color: adjust-color($font-color, $lightness: 95%);
+}
+@media (max-width: 700px) {
+	section#timeline {
+		article {
+			margin-left: 1em;
+			margin-right: 1em;
+			padding: 1.5em 0;
+			overflow-wrap: break-word;
+
+			blockquote {
+				border-left: .5em solid adjust-color($font-color, $lightness: 0%);
+			}
+		}
+	}
 }
