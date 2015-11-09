@@ -11,7 +11,7 @@ twitter_username: robgmills
 github_username:  robgmills
 linkedin_username: robgmills
 
-paginate: 5
+paginate: 10
 paginate_path: "/blog/page/:num/"
 
 # Build settings
