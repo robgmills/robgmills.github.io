@@ -5,7 +5,7 @@ title: Blog
 {% for post in paginator.posts %}
 <article>
   <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-  {{ post.content }}
+  {{ post.excerpt }}
 </article>
 <hr />
 {% endfor %}
