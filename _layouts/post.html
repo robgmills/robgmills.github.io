@@ -2,7 +2,10 @@
 layout: blog
 ---
 <article>
-  <h1><a>{{ page.title }}</a></h1>
+  <h1>
+    <a href="{{ page.link }}">{{ page.title }}</a>
+    <a href="{{ page.url | prepend: site.baseurl }}">permalink</a>
+  </h1>
   {{ content }}
 </article>
 <hr />
