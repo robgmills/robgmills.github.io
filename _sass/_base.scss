@@ -334,6 +334,7 @@ footer {
 
 			blockquote {
 				border-left: .5em solid adjust-color($font-color, $lightness: 0%);
+				margin-left: -1em;
 			}
 		}
 	}
