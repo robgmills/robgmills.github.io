@@ -83,9 +83,35 @@ enable the `enforce_ssl` property...
 I was all setup to run some actual performance tests this evening from home and post 
 the numbers, but I came home to wildly varying internet speeds:
 
-![Go, Comcast! Go!](http://i.imgur.com/3w8o1iK.png)
+![Go, Comcast! Go!](http://i.imgur.com/waVT3i9.png)
 
 I&apos;ll post numbers soon.
+
+### Update (2016/01/12)
+
+![My world is right!](http://i.imgur.com/JX68uI1.png)
+
+Much better!
+
+<div class="two-column">
+    <div>
+        <h4>Before</h4>
+        <img src="http://i.imgur.com/SnnJdXX.png" alt="Before" />
+    </div>
+    <div>
+        <h4>After</h4>
+        <img src="http://i.imgur.com/jcXGzi5.png" alt="After" />
+    </div>
+</div>
+
+Viewing just this post serves only three things from Github Pages:
+
+- the page document, which loads 70ms or ~41% faster
+- the stylesheet, which loads 93ms or ~61% faster
+- the logo, which loads 2406ms or ~92% faster
+
+All-in-all, I think it was worth the time learning more about CloudFlare and other edge 
+service providers.  Hopefully you will enjoy the new and improved website!
 
 [cloudflare]: https://www.cloudflare.com
 [akamai]: https://www.akamai.com/

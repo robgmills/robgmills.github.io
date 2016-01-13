@@ -240,6 +240,20 @@ section#timeline {
 				overflow-wrap: normal;
 				overflow: scroll;
 			}
+
+			&.two-column {
+				& > div {
+					width: 46%;
+					float: left;
+					margin: 0 2%;
+				}
+
+				&:after {
+					clear: both;
+					content: "";
+					display: block;
+				}
+			}
 		}
 
 		.video-container iframe,
