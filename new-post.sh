@@ -9,6 +9,8 @@ args=("$@")
 
 now=$(date +"%Y-%m-%d")
 
+####
+## Collect Input
 if [ ${#args[@]} -eq 0 ]; then
   echo "Date [$now]: \c"
   read post_date
@@ -28,7 +30,10 @@ if [ -z "${title// }" ]; then
   echo "Missing required post title!"
   exit 101
 fi
+####
 
+####
+## Format & build jekyll markdown post file
 escaped_url=${title// /-}
 low_esc_url="$(echo $escaped_url | tr '[A-Z]' '[a-z]')"
 
@@ -46,3 +51,15 @@ file_meta=$file_meta"---\n"
 file="$POST_DIR$DIR_SEPARATOR$post_date-$low_esc_url$FILE_EXT"
 
 echo ${file_meta} > ${file}
+####
+
+####
+## Do git stuff
+git checkout master && \
+    git fetch --all && \
+    git pull && \
+    git checkout -b post/${low_esc_url} && \
+    git add ${file} && \
+    git commit -m "Initial post ${title}" && \
+    git push origin post/${low_esc_url}
+####
