@@ -59,20 +59,20 @@ headache.  However, with CloudFlare, setup was a breeze (see directions below).
 0. Update your jekyll configuration to include https in the site `url` property and 
 enable the `enforce_ssl` property...
 
-    ```
-    url: "https://yourdomain.com"
-    enforce_ssl: yourdomain.com
-    ```
+   ```
+   url: "https://yourdomain.com"
+   enforce_ssl: yourdomain.com
+   ```
 
 0. Make sure the `canonical` link in your DOM `head`...
 
-    ```
-    <head>
-        ...
-        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-        ...
-    </head>
-    ```
+   ```html
+   <head>
+       ...
+       <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+       ...
+   </head>
+   ```
 
 0. Revel in your new found security
 
