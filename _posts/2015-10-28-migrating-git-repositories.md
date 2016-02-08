@@ -12,23 +12,23 @@ couldn't find the tool in our instance of BitBucket and had to resort to the bui
 
 0. [Make a bare mirrored clone of the repository][git-clone]
 
-    ```sh
-    git clone --mirror https://github.com/exampleuser/repository-to-mirror.git
-    cd repository-to-mirror.git
-    ```
-    
+   ```sh
+   git clone --mirror https://github.com/exampleuser/repository-to-mirror.git
+   cd repository-to-mirror.git
+   ```
+
 0. [Set the push location on the mirror to your new remote][git-push]
 
-    ```sh
-    git remote set-url --push origin https://git.ourserver.com/exampleuser/mirrored.git
-    git push --mirror
-    ```
+   ```sh
+   git remote set-url --push origin https://git.ourserver.com/exampleuser/mirrored.git
+   git push --mirror
+   ```
 
 0. [Update from original repository in case changes are made][git-remote]
 
-    ```sh
-    git remote update
-    ```
+   ```sh
+   git remote update
+   ```
 
 Once I had the commands down, it was just a matter of coordination and ordering.  My approach followed these basic steps:
 

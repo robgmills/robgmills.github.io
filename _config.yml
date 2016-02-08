@@ -3,26 +3,28 @@ title: Professional Button Pusher. Rocketman. Sometimes, Philosopher.
 author_name: Rob Mills
 email: hi@robgmills.com
 description: > # this means to ignore newlines until "baseurl:"
-  The mental dump of a passionate, deep thinking software engineer who's
+  The mental dump of a passionate, deep thinking software engineer who&39;s
   got a bit of an adventurous side.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://robgmills.com" # the base hostname & protocol for your site
 enforce_ssl: robgmills.com
-twitter_username: robgmills
-github_username:  robgmills
-linkedin_username: robgmills
+user: robgmills
 
 paginate: 10
 paginate_path: "/blog/page/:num/"
 
 # Build settings
-markdown: redcarpet
-
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript","tables", "with_toc_data"]
+# Synonomous with gh-pages settings: https://help.github.com/articles/using-jekyll-with-pages/#configuring-jekyll
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
 
 # Gems
 gems:
+- jekyll-coffeescript
+- jekyll-paginate
 - jekyll-sitemap
 - jekyll-redirect-from
 - jekyll-mentions
