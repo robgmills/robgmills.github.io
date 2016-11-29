@@ -13,6 +13,14 @@
     ```sh
     bundle install
     ```
+0. Run Jekyll
+    ```sh
+    jekyll s
+    ```
+    or
+    ```sh
+    bundle exec jekyll s
+    ```
 
 [ruby]: https://www.ruby-lang.org/en/documentation/installation/
 [jekyll]: https://jekyllrb.com/
