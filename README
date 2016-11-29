@@ -1,0 +1,18 @@
+
+# Quick Start
+
+0. Install [Ruby][]:
+    ```sh
+    brew install ruby
+    ```
+0. Install [Jekyll][]: 
+    ```sh
+    gem install jekyll bundler
+    ```
+0. Install Gems from `Gemfile`:
+    ```sh
+    bundle install
+    ```
+
+[ruby]: https://www.ruby-lang.org/en/documentation/installation/
+[jekyll]: https://jekyllrb.com/
