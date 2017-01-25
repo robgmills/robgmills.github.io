@@ -3,7 +3,9 @@
 
 0. Install [Ruby][]:
     ```sh
-    brew install ruby
+    brew install ruby rbenv
+    eval "$(rbenv init -)"
+    rbenv install 2.4.0
     ```
 0. Install [Jekyll][]: 
     ```sh
