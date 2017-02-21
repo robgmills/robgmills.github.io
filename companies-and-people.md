@@ -10,21 +10,6 @@ The companies are all doing really interesting work and/or have exemplary engine
 The people are all prideful workers. 
 Neither list is in any sort of order, and they change over time as my life experiences shape my priorities.
 
-## Companies That I’d Love To Work For
-
-* Google
-* Amazon
-* Twitter
-* Facebook
-* Pivotal
-* 37Signals
-* Airbnb
-* Spantree
-* Netflix
-* LinkedIn
-* Valve
-* My own
-
 ## People That I’ve Loved Working With
 
 ### (and would seek out an opportunity to do so again)
@@ -49,3 +34,18 @@ Neither list is in any sort of order, and they change over time as my life exper
 * Nick Nordeen
 * Tony Clyde
 * Carlos Robles
+
+## Companies That I’d Love To Work For
+
+* Google
+* Amazon
+* Twitter
+* Facebook
+* Pivotal
+* 37Signals
+* Airbnb
+* Spantree
+* Netflix
+* LinkedIn
+* Valve
+* My own
