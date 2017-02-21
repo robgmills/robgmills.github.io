@@ -34,6 +34,9 @@ Neither list is in any sort of order, and they change over time as my life exper
 * Nick Nordeen
 * Tony Clyde
 * Carlos Robles
+* Jason Rush
+* Todd Pierzina
+* Jonathan Andrew Wolter
 
 ## Companies That I’d Love To Work For
 
