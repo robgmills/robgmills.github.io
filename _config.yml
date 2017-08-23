@@ -21,12 +21,9 @@ kramdown:
   syntax_highlighter: rouge
   hard_wrap: false
 
-# Gems
-gems:
+plugins:
 - jekyll-coffeescript
 - jekyll-paginate
 - jekyll-sitemap
 - jekyll-redirect-from
-- jekyll-mentions
-- jemoji
 - jekyll-feed
