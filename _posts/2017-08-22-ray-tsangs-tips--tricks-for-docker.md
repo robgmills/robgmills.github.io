@@ -88,13 +88,13 @@ The resulting image is smaller and lighter (especially if you use an alpine linu
     COPY . /src
     RUN mvn -f /src/pom.xml package
     
-    FROM openjdk:8u181-alpine
+    FROM openjdk:8u131-alpine
     COPY --from=BUILD lib /opt/lib
     COPY --from=BUILD app.jar /opt/app.jar
     ENTRYPOINT ["java", "-jar", "/opt/app.jar"]
 
 ## Compress your Docker images
-Use the `--compress` flag when building Docker images to further shrink the size of your images:
+Use the `--compress` flag to compress the build context payload sent to the Docker daemon to further speed up builds:
 
     docker build --compress -t uptake/myapp:2.0-4fce3 .
 
@@ -131,7 +131,7 @@ In your Dockerfile, when defining the `ENTRYPOINT` directive that executes your 
     COPY . /src
     RUN mvn -f /src/pom.xml package
     
-    FROM openjdk:8u181-alpine
+    FROM openjdk:8u131-alpine
     COPY --from=BUILD lib /opt/lib
     COPY --from=BUILD app.jar /opt/app.jar
     ENTRYPOINT ["java", "-Xmx200m", "-jar", "/opt/app.jar"]
@@ -148,13 +148,25 @@ To get around this, use the `-XX:ParallelGCThreads=<value>` flag to prevent your
     COPY . /src
     RUN mvn -f /src/pom.xml package
     
-    FROM openjdk:8u181-alpine
+    FROM openjdk:8u131-alpine
     COPY --from=BUILD lib /opt/lib
     COPY --from=BUILD app.jar /opt/app.jar
     ENTRYPOINT ["java", "-XX:ParallelGCThreads=2", "-Xmx200m", "-jar", "/opt/app.jar"]
 
 
-## GCGroupMemoryLimit
-Please note that this is an experimental flag!
-Not quite sure what this does.  
-Or that I gave the right flag, as I can't seem to find any documentation for it.  
+## UseCGroupMemoryLimitForHeap
+The JDK 8u131 has a backported feature from JDK 9 that enables the JVM to detect memory availability when running in a Docker container.
+
+    FROM maven as BUILD
+    COPY . /src
+    RUN mvn -f /src/pom.xml package
+    
+    FROM openjdk:8u131-alpine
+    COPY --from=BUILD lib /opt/lib
+    COPY --from=BUILD app.jar /opt/app.jar
+    ENTRYPOINT ["java", "-XX:ParallelGCThreads=2", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-Xmx200m", "-jar", "/opt/app.jar"]
+    -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap
+
+Please note that this is an experimental flag that requires enabling!
+
+[Carlos Sanches goes into deeper detail in a dzone blog post.](https://dzone.com/articles/running-a-jvm-in-a-container-without-getting-kille)
