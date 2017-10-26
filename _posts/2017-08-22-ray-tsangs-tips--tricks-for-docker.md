@@ -9,6 +9,8 @@ Ray Tsang, Developer Advocate at Google, gave a presentation titled _Docker Tip
 Despite having run Docker in production for nearly 2 years, I got a ton out of it.
 Ray Tsang is also an avid traveler and photographer and can be reached on [Twitter](https://twitter.com/saturnism), [LinkedIn](https://www.linkedin.com/in/rayjtsang/) and [GitHub](https://github.com/saturnism) (but mostly via Twitter).
 
+_*UPDATE:* The gracious folks from [Spantree](https://www.spantree.net/) [recorded the session on behalf of the CJUG and you can find the video here](https://vimeo.com/239852824)._
+
 # Tips for all Docker containers
 ## Minimize layers as much as possible
 Each layer takes up extra space.  
