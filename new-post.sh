@@ -63,3 +63,5 @@ git checkout master && \
     git commit -m "Initial post ${title}" && \
     git push origin post/${low_esc_url}
 ####
+
+eval "$EDITOR $file"
