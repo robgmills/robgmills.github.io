@@ -120,6 +120,9 @@ header {
 	@include circlelogo( 124px, 4px, #fff, #000 );
 
 }
+.highlighter-rouge {
+    background-color: adjust-color($font-color, $lightness: 95%);
+}
 section#timeline {
 	width: auto;
 	margin: 0 auto;
@@ -166,9 +169,8 @@ section#timeline {
 			}
 		}
 
-		ul {
+		ul, ol {
 			display: block;
-			list-style-type: disc;
 			margin: 0 5%;
 
 			&:nth-child(2) {
@@ -179,6 +181,15 @@ section#timeline {
 				margin: 10px 0;
 			}
 		}
+
+        ul {
+			list-style-type: disc;
+        }
+
+        & > ul,
+        & > ol {
+            font-size: corbusier-font(1);
+        }
 
 		blockquote {
 			border-left: .5em solid adjust-color($font-color, $lightness: 0%);
@@ -236,10 +247,23 @@ section#timeline {
 				height: 0;
 			}
 
-			&.highlight {
-				overflow-wrap: normal;
-				overflow: scroll;
-			}
+			&.highlighter-rouge {
+                width: 100vw;
+                position: relative;
+                left: 50%;
+                right: 50%;
+                margin-left: -50vw;
+                margin-right: -50vw;
+
+                & > div {
+                    &.highlight {
+				        overflow-wrap: normal;
+				        overflow: scroll;
+                        max-width: 700px;
+                        margin: auto;
+                    }
+                }
+            }
 
 			&.two-column {
 				& > div {
