@@ -27,8 +27,8 @@ embed {
 }
 svg:not(:root) { overflow: hidden }
 ::selection {
-	background: adjust-color($font-color, $lightness: 0%);
-	color: adjust-color($font-color, $lightness: 100%);
+	background: adjust-color(#FFEB00, $lightness: 0%);
+	color: adjust-color($font-color, $lightness: 0%);
 }
 ::-moz-selection {
 	background: adjust-color($font-color, $lightness: 0%);
