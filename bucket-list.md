@@ -8,6 +8,7 @@ My bucket list helps me focus on, and tracking my progress towards, expanding my
 I like to disconnect from my daily life.
 To immerse myself in festivals and situations at locations far away from home.
 
+* Climb to Everest Base Camp
 * Set foot on all 7 continents
   * ~~North America~~ (this was a 'gimme')
   * South America
