@@ -25,10 +25,10 @@ That means my expectations of myself, the team, and you are going to be high.
 
 ## How you can help me
 
-* Excel in everything that you do.
+* Excel in everything that you do - no explanation required.
 * Be curious - don't be satisfied with understanding what's on the surface; ask tough questions.
-* Assume that everyone has a positive intent.
-* Disagree with me - I believe that the best results are usually the output of healthy debate.
+* Assume that everyone has a positive intent - we all want each other and this company to be awesome and make our decisions based on what we think is best.
+* Disagree with me - the times I've been most satisfied with my work was at the other end of a healthy debate.
 * Tell me when I screw up - I learn best by trying, failing and trying again.
 * Hold each other accountable - for both the good and the bad.
 * Take action/take control - don't wait for things to happen, get to work and make them happen.
@@ -83,7 +83,7 @@ Things to include in the meeting notes:
 You set the agenda - this is time I'm dedicating to you to talk about anything and everything you want. 
 But don't wait for a 1-on-1 to talk about something, especially if its urgent.
 
-Everything you say to me stays between us unless
+Everything you say to me during our 1-on-1 stays between us unless
 
 0. it threatens the business - i.e. something illegal or against our code of conduct happens
 0. I clear it with you to bring it up with others
