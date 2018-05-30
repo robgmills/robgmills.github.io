@@ -117,7 +117,7 @@ a {
 header {
 	margin-top: 70px;
 
-	@include circlelogo( 124px, 4px, #fff, #000 );
+	@include circlelogo( 124px, 4px, #fff, #000, "/images/headshot-clown.jpg" );
 
 }
 .highlighter-rouge {

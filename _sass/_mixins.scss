@@ -19,7 +19,7 @@
   border-radius: $radius;
 }
 
-@mixin circlelogo($size: 100px, $bordersize: 4px, $bgcolor: #fff, $bordercolor: #000) {
+@mixin circlelogo($size: 100px, $bordersize: 4px, $bgcolor: #fff, $bordercolor: #000, $image: "/images/logo.svg") {
 	aside {
 		@include border-radius(50%);
 		margin: 0px auto;
@@ -42,13 +42,11 @@
 			a {
 				@include border-radius(50%);
 				// TODO: replace with encoded image
-				background: #fff url("/images/logo.svg") center center no-repeat;
+				background: #fff url($image) center center no-repeat;
 				background-size: 100% 100%;
 				display: block;
 
-				width: $size - ($bordersize * 6); // 108px
-				height: $size - ($bordersize * 6); // 108px
-				margin: ($bordersize * 2) auto 0; // 4px
+				height: 100%;
 			}
 		}
 	}
