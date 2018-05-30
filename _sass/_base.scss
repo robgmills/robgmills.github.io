@@ -120,6 +120,15 @@ header {
 	@include circlelogo( 124px, 4px, #fff, #000, "/images/headshot-clown.jpg" );
 
 }
+
+hr {
+    display: block;
+    border: none;
+    height: 1px;
+    background-color: adjust-color($font-color, $lightness: 95%);
+    margin: 70px 0 50px 0;
+}
+
 .highlighter-rouge {
     background-color: adjust-color($font-color, $lightness: 95%);
 }
