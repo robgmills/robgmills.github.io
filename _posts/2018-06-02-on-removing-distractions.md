@@ -48,18 +48,18 @@ Even though there are times I could reasonably want to access them, I wanted jus
 By blocking all access from my phone, that meant I had to either 
 
 0. find another site that had that information (like the score of the Celtic's game); or 
-0. access that site on my laptop - which, as I'll elaborate on, had its own guardrails.
+0. access the restricted site on my laptop - which, as I'll elaborate on, had its own guardrails.
 
 This all meant that if I wanted to waste time in one of those ways that had become addictive, I had to be deliberate about it.
 
 ## A time and a place for distractions
 As I described above, it's common for one to remove technology from a place where one wants to focus on other things - like removing the TV and your phone from the bedroom to force your mind to associate that space with sleep and sex and not distractions.
 The inverse practice also holds: one can create a space associated with technology and distraction to contain its presence.
-This is not unlike having a home office as a spatial boundary between a work- and life-mindsed; allowing them to exist in the same vicinity but still be distinct.
+This is not unlike having a home office as a spatial boundary between a work- and life-mindset; allowing them to exist in the same vicinity but still be distinct.
 So I also wanted to provide a way for me to channel those distractions.
 
 I used the [StayFocusd](https://chrome.google.com/webstore/detail/stayfocusd/laankejkbhbdhmipfmgcngdelahlfoji) extension for Google Chrome to still allow me to visit those distracting sites, but limit the amount of time I do so to only 10 minutes per day.
-This provides a _relief valve_ of sorts in the morning where I can quickly catch up on the world news, game scores and schedules for my favorite teams, and find a few new tech blog posts or white papers to add to the hopper to read.
+This provides a _relief valve_ of sorts in the morning during when I can quickly catch up on the world news, game scores and schedules for my favorite teams, and find a few new tech blog posts or white papers to add to the hopper to read while on the way into work.
 
 ## Results
 Keep in mind: there's nothing preventing me from side-stepping all of these restrictions.
