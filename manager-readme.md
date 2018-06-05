@@ -122,7 +122,7 @@ That shows a maturity and breeds trust that you can receive feedback and take ac
 ## Your career development
 
 Ultimately, you're the only one responsible for your career development.
-Some campanies that I have worked/you might work at have managers that won't take time to develop their reports.
+Some companies that I have worked/you might work at have managers that won't take time to develop their reports.
 Fortunately, I do care about your development.
 I want to see you take on bigger challenges and produce better results - maybe even get promoted or transferred into a new role - like mine!
 
