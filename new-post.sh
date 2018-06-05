@@ -64,4 +64,4 @@ git checkout master && \
     git push origin post/${low_esc_url}
 ####
 
-eval "$EDITOR $file"
+eval "${EDITOR:-vim} $file"
