@@ -2,7 +2,7 @@
 # Quick Start
 
 ```sh
-./run-blog.sh
+docker-compose up
 ```
 
 To stop the Jekyll server, type `Ctrl-c` in the terminal.
