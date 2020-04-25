@@ -20,6 +20,7 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
   hard_wrap: false
+  math_engine: mathjax 
 
 plugins:
 - jekyll-coffeescript
