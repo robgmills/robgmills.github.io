@@ -1,4 +1,15 @@
 <footer>
+  <form id="subscribe" 
+        action="https://feedburner.google.com/fb/a/mailverify"
+        method="post"
+        target="popupwindow"
+        onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=robgmills', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+    <span>
+      <input type="email" name="email" placeholder="your@email.com" /><input type="submit" value="subscribe" />
+    </span>
+    <input type="hidden" value="robgmills" name="uri"/>
+    <input type="hidden" name="loc" value="en_US"/>
+  </form>
   <aside class="logo clearfix">
     <div class="clearfix">
       <a href="#logo" name="bottom">{{ site.author_name }}</a>

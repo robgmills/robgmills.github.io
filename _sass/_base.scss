@@ -36,6 +36,7 @@ svg:not(:root) { overflow: hidden }
 }
 * {
 	color: adjust-color($font-color, $lightness: 30%);
+    padding: 0;
 }
 html {
 	font-size: 100%;
@@ -126,7 +127,7 @@ hr {
     border: none;
     height: 1px;
     background-color: adjust-color($font-color, $lightness: 95%);
-    margin: 70px 0 50px 0;
+    margin: 2em 0 1em 0;
 }
 
 .highlighter-rouge {
@@ -223,7 +224,7 @@ section#timeline {
 					font-size: corbusier-font(-1);
 					font-weight: get-font-weight(1);
 					background-color: transparent;
-					line-height: 30px;
+					line-height: 35px;
 					padding-left: 20px;
 					padding-right: 20px;
 					display: inline-block;
@@ -301,21 +302,13 @@ section#timeline {
 	}
 
 
-	& > hr {
-		display: block;
-		border: 1px solid adjust-color($font-color, $lightness: 95%);
-		height: 0;
-		color: adjust-color($font-color, $lightness: 95%);
-		margin: 70px 0 50px 0;
-
-		&:last-of-type {
-			display: none;
-		}
+	& > hr:last-of-type {
+	    display: none;
 	}
 
 	nav.pagination {
-		padding: 2em 1em;
-		margin-top: 4em;
+		padding: 1.5em 1em 2.5em;
+		margin-top: 2em;
 		border-top: 1px solid adjust-color($font-color, $lightness: 95%);
 
 		span {
@@ -353,11 +346,7 @@ section#timeline {
 	}
 }
 footer {
-	clear: both;
-	display: block;
 	margin: 20px 0;
-	padding: 2em 0;
-	position: relative;
 	border-top: 1px solid adjust-color($font-color, $lightness: 95%);
 
 	@include circlelogo( 62px, 2px, #fff, #000 );
@@ -367,11 +356,77 @@ footer {
 		-moz-animation:spin 4s linear infinite;
 		animation:spin 4s linear infinite;
 	}
+
+    form#subscribe {
+        margin: 20px auto;
+        display: block;
+        text-align: center;
+   
+        span {
+            display: inline-block;
+            height: 35px;
+            color: adjust-color($font-color, $lightness: 60%);
+    		border: 1px solid adjust-color($font-color, $lightness: 90%);
+    		border-radius: 30px;
+            font-size: corbusier-font(1);
+    		font-weight: get-font-weight(1);
+            background-color: transparent;
+    		padding-left: 20px;
+    		padding-right: 20px;
+    		transition-property: all;
+    		transition-duration: 0.2s;
+    		-webkit-font-smoothing: antialiased;
+    
+    		&:hover, &:active {
+    			color: adjust-color($font-color, $lightness: 30%);
+    			font-weight: 100; // TODO: replace with mixin/function
+    			border-color: adjust-color($font-color, $lightness: 0%)
+            }
+        
+            input[type=email] {
+                color: adjust-color($font-color, $lightness: 60%);
+    	    	border: none;
+    	    	font-size: corbusier-font(-1);
+    	    	font-weight: get-font-weight(1);
+                text-align: center;
+                background-color: transparent;
+    	    	line-height: 35px;
+    	    	outline: none;
+    	    	transition-property: all;
+    	    	transition-duration: 0.2s;
+    	    	-webkit-font-smoothing: antialiased;
+            }
+
+            input[type=submit] {
+    	    	outline: none;
+                color: adjust-color($font-color, $lightness: 60%);
+                border: none;
+                border-left: 1px solid adjust-color($font-color, $lightness: 90%);
+    	    	font-size: corbusier-font(-1);
+    	    	font-weight: get-font-weight(1);
+                background-color: transparent;
+    	    	line-height: 35px;
+                padding-left: 18px;
+    	    	transition-property: all;
+    	    	transition-duration: 0.2s;
+    	    	-webkit-font-smoothing: antialiased;
+    
+    	    	&:hover, &:active {
+    	    		color: adjust-color($font-color, $lightness: 0%);
+    	    		font-weight: 100; // TODO: replace with mixin/function
+    	    		border-color: adjust-color($font-color, $lightness: 0%)
+    	    	}
+            }
+        }
+        
+    }
 }
+
 .copyright {
 	float: right;
 	color: adjust-color($font-color, $lightness: 95%);
 }
+
 @media (max-width: 700px) {
 	section#timeline {
 		article {
@@ -386,3 +441,4 @@ footer {
 		}
 	}
 }
+
