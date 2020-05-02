@@ -7,7 +7,7 @@ link: https://stackoverflow.com/a/57370526
 ---
 
 Since I've started Andrew Ng's _Machine Learning_ on Coursera, I've found myself with a new need on this blog: the ability to elegantly render formulas.
-This really showed in [my last post on the _identity matrix_](/machine-learning/2020/04/24/til-of-the-identity-matrix.html) when I had to hack through displaying a simple matrix using code blocks and space-aligned columns and rows of characters.
+This really showed in [my last post on the _identity matrix_]({% post_url 2020-04-24-til-of-the-identity-matrix %}) when I had to hack through displaying a simple matrix using code blocks and space-aligned columns and rows of characters.
 So, my quick win this morning is to find a way to work in LaTeX-like formula rendering for future blog posts and _this_ post is going to serve as my testing ground for adding this capability!
 
 I chose [KaTex](https://katex.org/) for no particular reason.
@@ -44,7 +44,7 @@ Look at that!
 [KaTeX supports a decent set of TeX functions](https://katex.org/docs/supported.html) to try.
 And they keep an [alphabetically sorted and complete list of functions](https://katex.org/docs/support_table.html) to reference too.
 
-I want to see if [my 4x4 identity matrix example from yesterday](/machine-learning/2020/04/24/til-of-the-identity-matrix.html) is any easier first...
+I want to see if [my 4x4 identity matrix example from yesterday]({% post_url 2020-04-24-til-of-the-identity-matrix %}) is any easier first...
 
 \\[\ 
 \begin{bmatrix}
