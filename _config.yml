@@ -28,3 +28,6 @@ plugins:
 - jekyll-sitemap
 - jekyll-redirect-from
 - jekyll-feed
+- jekyll-mentions
+- jekyll-github-metadata
+- jemoji

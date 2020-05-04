@@ -1,6 +1,11 @@
-jekyll:
-  image: starefossen/github-pages
-  volumes:
-    - "${PWD}:/usr/src/app"
-  ports:
-    - "4000:4000"
+version: "3.3"
+services:
+  jekyll:
+    image: starefossen/github-pages:198
+    volumes:
+      - "${PWD}:/usr/src/app"
+    ports:
+      - "4000:4000"
+    command: jekyll serve -d /_site --unpublished --future --drafts --watch --force_polling -H 0.0.0.0 -P 4000
+
+  

@@ -55,13 +55,14 @@ echo ${file_meta} > ${file}
 
 ####
 ## Do git stuff
-git checkout master && \
-    git fetch --all && \
-    git pull && \
-    git checkout -b post/${low_esc_url} && \
-    git add ${file} && \
-    git commit -m "Initial post ${title}" && \
-    git push origin post/${low_esc_url}
+git pull
+#git checkout master && \
+#    git fetch --all && \
+#    git pull && \
+#    git checkout -b post/${low_esc_url} && \
+#    git add ${file} && \
+#    git commit -m "Initial post ${title}" && \
+#    git push origin post/${low_esc_url}
 ####
 
 eval "${EDITOR:-vim} $file"
