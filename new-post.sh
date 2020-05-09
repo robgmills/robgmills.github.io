@@ -32,6 +32,8 @@ if [ -z "${title// }" ]; then
 fi
 ####
 
+mkdir -p "images/${post_date//-//}" # replace hypen in date with backslashes
+
 ####
 ## Format & build jekyll markdown post file
 escaped_url=${title// /-}
